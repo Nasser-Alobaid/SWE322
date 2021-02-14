@@ -2,8 +2,6 @@
     <head>
     <title> PHP 01 </title>
     <meta charset="utf-8">
-        
-        
     </head>
     <body>
     
@@ -14,14 +12,14 @@
     <?php
     
     echo "Today's date".date("Y/m/d")."<br>";
-    
+    //remove the comment to see the error
     $n = 1;
     $s = "1";
     $n1 = $n + $s;
-    $n2 = $n1 + "10 little penguins";
+   // $n2 = $n1 + "10 little penguins";
     $n3 = "hello";
     $n4 = "world";
-    //$n5 = $n3 + $n4;
+   // $n5 = $n3 + $n4;
     $n6 = $n3.$n4;
     
     
@@ -33,7 +31,7 @@
     echo "<br>";
     echo $n1;
     echo "<br>";
-    echo $n2;
+    //echo $n2;
     echo "<br>";
     echo $n3;
     echo "<br>";
