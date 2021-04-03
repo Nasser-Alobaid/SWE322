@@ -1,6 +1,6 @@
 <?php
 
-$host_address = "127.0.0.1";
+$host_address = "127.0.0.1:3307";
 $user_host = "Nasser";
 $password = "Nasser";
 $db_name = "db_phonebook";
@@ -31,7 +31,7 @@ $result = mysqli_query($conn, $query);
 
  
     if($result) {
-    echo "<table>";
+    echo "<table style = 'border: 12px solid silver ;'>";
     echo "<tr>";
     echo "<th> ID </th>";
     echo "<th> Name </th>";
@@ -47,17 +47,23 @@ $result = mysqli_query($conn, $query);
         echo "<td> $result_row[2] </td>";
         echo "<td> $result_row[3] </td>";
         echo "</tr>";
-        echo "</table>";
-    
+        
 }
+echo "</table>";
 }
 
 echo "<br>"."<br>"."<br>";
 echo "Why inserting a previously inserted value in namewill generate an error?";
 echo "<br>"."<br>";
-echo "Because Name is uniqe we cannot have duplicate. ";
+echo "<p><pre>Because Name is uniqe we cannot have duplicate. </pre></p>";
 echo "<br>"."<br>";
 echo "Why for phone we have used varchar and for mobile we have used char?";
+echo "<br>"."<br>";
+echo "<p style><pre>Because varchar is a variable leangth filed if we want to store string with a variable length such as phone we use varchar,
+ but if the length id mainly the same like the mobile number we use char because
+  it is slightly more size efficient and also slightly faster</pre><p> ";
+  echo "<br>.<br>";
+  echo "<a href = https://github.com/Nasser-Alobaid/SWE322/tree/main/PS02>GitHub Link</a>";
 
 
 ?>
